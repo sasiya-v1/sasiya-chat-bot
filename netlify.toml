@@ -1,0 +1,9 @@
+[build]
+  command = "npm install && npm start"
+  functions = "functions"
+  publish = "."
+
+[[redirects]]
+  from = "/webhook"
+  to = "/.netlify/functions/server"
+  status = 200
